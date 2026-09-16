@@ -1,0 +1,6 @@
+.git
+__pycache__
+deliverables
+build.py
+package.py
+README.md
