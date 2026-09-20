@@ -50,6 +50,7 @@ tabs='<div class="payment-tabs" role="tablist" aria-label="Payment options">'+''
 html=re.sub(r'<div class="payment-tabs".*?</div><div class="payment-panel"',tabs+'<div class="payment-panel"',html,flags=re.S)
 html=html.replace('aria-labelledby="tab-quarterly"','aria-labelledby="tab-seven"').replace('85,703,000','87,240,000').replace('UNIT PRICE / QUARTERLY PLAN','UNIT PRICE / 7-YEAR PLAN')
 html=html.replace('<head>','<head><base href="/r5-46/">')
+html=re.sub(r'<section class="section archive">.*?</section>', '', html, flags=re.S)
 (r5/'index.html').write_text(html)
 js=(r1/'app.js').read_text()
 for old,new in [('R1-78','R5-46'),('Dunes','Acacia'),('DUNES','ACACIA'),('245','246'),('660','681'),('C3','C6'),('1555','1494'),('[695,0,1105,1147]','[200,0,700,1147]'),('[951,297,300,300]','[440,290,300,300]')]:js=js.replace(old,new)

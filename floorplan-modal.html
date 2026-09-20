@@ -1,0 +1,8 @@
+<dialog id="floorplan-modal" aria-labelledby="floorplan-modal-title" aria-describedby="floorplan-modal-hint">
+  <div class="fp-header"><div><p>EXPLORE YOUR HOME</p><h2 id="floorplan-modal-title">Interactive floor plan</h2></div><button id="fp-close" aria-label="Close floor plan">✕</button></div>
+  <div class="fp-navigation"><div class="fp-unit-tabs" role="group" aria-label="Choose a villa floor plan"><button data-floorplan-switch="r1-78" aria-pressed="true">Dunes · R1-78</button><button data-floorplan-switch="r5-46" aria-pressed="false">Acacia · R5-46</button></div><button id="fp-reset">Full plan ↺</button></div>
+  <div class="fp-content">
+    <div class="fp-stage"><svg id="fp-camera" viewBox="0 0 1287 1555" role="group" aria-label="Interactive villa floor plan"><image id="fp-image" width="1287" height="1555"/><g id="fp-rooms"></g></svg><p id="floorplan-modal-hint">Tap a room to reveal its dimensions</p></div>
+    <div class="fp-details"><div id="fp-room-details" aria-live="polite"><p id="fp-kicker">YOUR HOME, AT A GLANCE</p><h3 id="fp-room-name">Choose a room.</h3><strong id="fp-room-size"></strong><p id="fp-room-description">Tap the plan or choose a room below.</p></div><label for="fp-room-select">Explore every space</label><select id="fp-room-select"><option value="">Choose a room</option></select><p id="fp-load-status" role="status"></p><button id="fp-retry" hidden>Try loading the rooms again</button><a id="fp-original" class="text-button" target="_blank" rel="noopener">Original plan & all dimensions ↗</a><p class="fp-disclaimer">Dimensions as stated in the brochure. Drawings and landscaping are illustrative.</p></div>
+  </div>
+</dialog>

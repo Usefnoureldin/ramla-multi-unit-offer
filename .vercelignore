@@ -4,3 +4,8 @@ deliverables
 build.py
 package.py
 README.md
+
+# Local annotation design options
+dist/annotation-options.html
+dist/annotation-options.css
+dist/annotation-options.js
